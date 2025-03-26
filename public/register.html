@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body class="font">
+    <header id="nav_header" class="text-[var(--chocolate-color)] bg-[var(--headerRegister-color)] h-[350px] px-[56px] py-[32px]">
+        <div id="top_header" class="flex justify-between">
+          <p class="">HOME > CREATE ACCOUNT</p>
+          <p class="text-right">&lt;&lt; RETURN TO HOME PAGE</p>
+        </div>
+        <div id="mid_header"  class="flex justify-center items-center flex-col h-full gap-[24px]">
+          <h1 class="text-[1.875rem] py-[16px] font-semibold border-b border-t">CREATE ACCOUNT</h1>
+          <p class="">Welcome to be our member.</p>
+        </div>
+    </header>
+    <section
+      id="register_form"
+      class="flex flex-col justify-center items-center h-[765px] bg-[var(--mainSectionRegister-color)]"
+    >
+    <div
+      id="register_header"
+      class="flex justify-center items-center h-[170px] bg-[var(--mainSectionRegister-color)] text-[var(--chocolate-color)]"
+    >
+      <p>REGISTER USER</p>
+    </div>
+      <div
+        id="main_box"
+        class="flex flex-col justify-center items-center w-[815px] h-[480px] bg-[var(--formRegister-color)] rounded-2xl"
+      >
+        <div id="form_box" class="flex gap-24 ">
+          <div id="left_section">
+            <form class="flex flex-col justify-center items-center space-y-4 text-[var(--chocolate-color)]">
+              <div class="flex items-center">
+                <label class="w-32">First Name</label>
+                <input
+                  placeholder="Enter your first name"
+                  type="text"
+                  class="p-1.5 border-2 border-[var(--inputBorder-color)] rounded-md outline-none"
+                />
+              </div>
+
+              <div class="flex items-center">
+                <label class="w-32">Last Name</label>
+                <input
+                  placeholder="Enter your last name"
+                  type="text"
+                  class="p-1.5 border-2 border-[var(--inputBorder-color)] rounded-md outline-none"
+                />
+              </div>
+
+              <div class="flex items-center">
+                <label class="w-32">E-mail</label>
+                <input
+                  placeholder="Enter your email..."
+                  type="email"
+                  class="p-1.5 border-2 border-[var(--inputBorder-color)] rounded-md outline-none"
+                />
+              </div>
+
+              <div class="flex items-center">
+                <label class="w-32">Phone Number</label>
+                <input
+                  placeholder="012-345-6789"
+                  type="tel"
+                  class="p-1.5 border-2 border-[var(--inputBorder-color)] rounded-md outline-none"
+                />
+              </div>
+
+              <div class="flex items-center">
+                <label class="w-32">Password</label>
+                <input
+                  placeholder="Enter your password"
+                  type="password"
+                  class="p-1.5 border-2 border-[var(--inputBorder-color)] rounded-md outline-none"
+                />
+              </div>
+
+              <div class="flex items-center">
+                <label class="w-32">Re-Password</label>
+                <input
+                  placeholder="Enter your password"
+                  type="password"
+                  class="p-1 border-2 border-[var(--inputBorder-color)] rounded-md outline-none"
+                />
+              </div>
+            </form>
+          </div>
+          <div id="right_section" class="flex items-center justify-center flex-col self-center gap-4">
+            <div class="flex items-center justify-center w-[156px] h-[181px] bg-[var(--backgroundImgae-color)]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-24 w-24 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <button class="hover:cursor-pointer hover:bg-[var(--mainSectionRegister-color)] hover:text-[var(--chocolate-color)] transition duration-300  text-white bg-[var(--buttonUpImage-color)] w-[106px] py-2 px-2 border-1 rounded-xl text-[0.875rem]">Upload Image</button>
+          </div>
+        </div>
+        <div id="bottom_form" class="mt-8 flex items-center gap-[60px]">
+          <a href="./login.html" class=" text-[16px]">Already have an account</a>
+          <button
+            class=" w-[145px] h-[40px] text-[var(--cream-color)] bg-[var(--chocolate-color)] px-8 py-2 border-1 hover:cursor-pointer hover:bg-[var(--mainSectionRegister-color)] hover:text-[var(--chocolate-color)] transition duration-300 rounded-xl"
+          >
+            Sign up
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
