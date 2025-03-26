@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop page| Limited Edition Art & Decor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frijole&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cannoli: "#E8E2D6",
+              "cream-tan": "#F0E0D0",
+              safari: "#CABEAA",
+              sirocco: "#D9C3AE",
+              mocha: "#C2A78F",
+              chanterelle: "#AD8D75",
+              "baltic-amber": "#9A7B63",
+              chocolate: "#62483A",
+            },
+            fontFamily: {
+              serif: ["Playfair Display", "serif"],
+              sans: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+      html {
+        scroll-behavior: sooth;
+      }
+
+      body {
+        font-family: "helvetica", sans-serif;
+        background-color: #fcfaf6;
+      }
+
+      .playfair {
+        font-family: "helvetica", serif;
+      }
+
+      .hero-section {
+        background: linear-gradient(
+            to right,
+            rgba(228, 220, 208, 0.8),
+            rgba(228, 220, 208, 0.6)
+          ),
+          url("/Landscape-Painting-Modern-Art-3.jpg") center/cover no-repeat;
+        height: 90vh;
+      }
+
+      .category-card:hover .category-overlay {
+        opacity: 1;
+      }
+
+      .product-card:hover .product-actions {
+        bottom: 0;
+      }
+
+      .slide-in {
+        animation: slideIn 0.5s ease forwards;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-chocolate py-4 shadow-sm sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 md:px-8 min-w-[1024px] w-full h-[60px] justify-between items-center"
+      >
+        <div class="flex justify-between items-center">
+          <div class="flex justify-center items-center">
+            <img class="w-16 pr-4" src="logo.png" alt="" />
+            <a
+              href="#"
+              class="text-2xl md:text-2xl font-bold playfair text-cream-tan"
+              >COLLECTICO</a
+            >
+          </div>
+
+          <!-- Main Navigation -->
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="#"
+              class="text-cream-tan md:text-1xl hover:text-baltic-amber font-medium transition-colors"
+              >Home</a
+            >
+            <a
+              href="#collections"
+              class="text-cream-tan md:text-1xl font-medium hover:text-baltic-amber transition-colors"
+              >Shop</a
+            >
+            <a
+              href="#featured"
+              class="text-cream-tan md:text-1xl font-medium hover:text-baltic-amber transition-colors"
+              >Auction</a
+            >
+            <a
+              href="#about"
+              class="text-cream-tan md:text-1xl font-medium hover:text-baltic-amber transition-colors"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-cream-tan md:text-1xl font-medium hover:text-baltic-amber transition-colors"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Icons -->
+          <div class="flex items-center space-x-4">
+            <a
+              href="#"
+              class="text-cream-tan md:text-2xl hover:text-baltic-amber transition-colors"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a
+              href="#"
+              class="text-cream-tan md:text-2xl hover:text-baltic-amber transition-colors"
+            >
+              <i class="fa-regular fa-user"></i>
+            </a>
+            <a
+              href="#"
+              class="text-cream-tan md:text-2xl hover:text-baltic-amber transition-colors"
+            >
+              <i class="fa-solid fa-truck"></i>
+            </a>
+            <!-- เลข 3 ที่อยู่บนคาร์ทช๊อปปิ้ง
+             <span
+                class="absolute -top-2 -right-2 bg-mocha text-cannoli text-xs rounded-full w-5 h-5 flex items-center justify-center"
+                >3</span
+              >
+            -->
+            <a
+              href="#"
+              class="text-cream-tan md:text-2xl hover:text-baltic-amber transition-colors relative"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <button class="md:hidden text-chocolate">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-screen flex justify-center items-center"
+      style="background-image: url('Landscape-Painting-Modern-Art-3.jpg')"
+    >
+      <h1
+        class="text-4xl md:text-5xl font-bold playfair text-chocolate text-center items-center"
+      >
+        Express yourself through Collectico: <br />
+        Where every collection Tells a Story
+      </h1>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="collections" class="py-16 bg-cream-tan">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <!-- Category 1 -->
+          <div
+            class="category-card relative overflow-hidden group rounded-lg h-80"
+          >
+            <img
+              src="https://i.pinimg.com/736x/4f/b8/95/4fb8951ee4abaaf4f159d9db98718bfa.jpg"
+              alt="Portrait Painting"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="category-overlay absolute inset-0 bg-gradient-to-t from-chocolate/80 to-transparent flex items-end opacity-0 transition-opacity duration-300"
+            >
+              <div class="p-6">
+                <h3 class="text-cream-tan text-xl font-semibold playfair mb-2">
+                  Portrait Painting
+                </h3>
+                <p class="text-sirocco text-sm mb-4"></p>
+                <a
+                  href="./shop.html"
+                  class="inline-block text-cream-tan border-b border-cream-tan hover:text-safari transition-colors"
+                  >Explore Collection</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div
+            class="category-card relative overflow-hidden group rounded-lg h-80"
+          >
+            <img
+              src="Landscape-Painting-modern-art-5.jpg"
+              alt="Landscape Painting"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="category-overlay absolute inset-0 bg-gradient-to-t from-chocolate/80 to-transparent flex items-end opacity-0 transition-opacity duration-300"
+            >
+              <div class="p-6">
+                <h3 class="text-cream-tan text-xl font-semibold playfair mb-2">
+                  Landscape Painting
+                </h3>
+                <p class="text-sirocco text-sm mb-4"></p>
+                <a
+                  href="#"
+                  class="inline-block text-cream-tan border-b border-cream-tan hover:text-safari transition-colors"
+                  >Explore Collection</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div
+            class="category-card relative overflow-hidden group rounded-lg h-80"
+          >
+            <img
+              src="Genre-Painting-classic-art-5.jpg"
+              alt="Display Pieces"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="category-overlay absolute inset-0 bg-gradient-to-t from-chocolate/80 to-transparent flex items-end opacity-0 transition-opacity duration-300"
+            >
+              <div class="p-6">
+                <h3 class="text-cream-tan text-xl font-semibold playfair mb-2">
+                  Genre Painting
+                </h3>
+                <p class="text-sirocco text-sm mb-4"></p>
+                <a
+                  href="#"
+                  class="inline-block text-cream-tan border-b border-cream-tan hover:text-safari transition-colors"
+                  >Explore Collection</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div
+            class="category-card relative overflow-hidden group rounded-lg h-80"
+          >
+            <img
+              src="Abstract-Painting-modern-art-5.jpg"
+              alt="Outdoor Sculptures"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="category-overlay absolute inset-0 bg-gradient-to-t from-chocolate/80 to-transparent flex items-end opacity-0 transition-opacity duration-300"
+            >
+              <div class="p-6">
+                <h3 class="text-cream-tan text-xl font-semibold playfair mb-2">
+                  Abstract Painting
+                </h3>
+                <p class="text-sirocco text-sm mb-4"></p>
+                <a
+                  href="#"
+                  class="inline-block text-cream-tan border-b border-cream-tan hover:text-safari transition-colors"
+                  >Explore Collection</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Category 5-->
+          <div
+            class="category-card relative overflow-hidden group rounded-lg h-80"
+          >
+            <img
+              src="Historical-Painting-classic-art-2.jpg"
+              alt="Outdoor Sculptures"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="category-overlay absolute inset-0 bg-gradient-to-t from-chocolate/80 to-transparent flex items-end opacity-0 transition-opacity duration-300"
+            >
+              <div class="p-6">
+                <h3 class="text-cream-tan text-xl font-semibold playfair mb-2">
+                  Historical Painting
+                </h3>
+                <p class="text-sirocco text-sm mb-4"></p>
+                <a
+                  href="#"
+                  class="inline-block text-cream-tan border-b border-cream-tan hover:text-safari transition-colors"
+                  >Explore Collection</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classsic-Modern-contemp Products -->
+    <section id="featured" class="py-16 bg-safari/20">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Category 1 -->
+          <div
+            class="category-card relative overflow-hidden group rounded-lg h-80"
+          >
+            <img
+              src="Genre-Painting-classic-art-3.jpg"
+              alt="Fine Art Paintings"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="category-overlay absolute inset-0 bg-gradient-to-t from-chocolate/80 to-transparent flex items-end opacity-0 transition-opacity duration-300"
+            >
+              <div class="p-6">
+                <h3 class="text-cream-tan text-xl font-semibold playfair mb-2">
+                  Classic
+                </h3>
+                <p class="text-sirocco text-sm mb-4"></p>
+                <a
+                  href="#"
+                  class="inline-block text-cream-tan border-b border-cream-tan hover:text-safari transition-colors"
+                  >Explore Collection</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div
+            class="category-card relative overflow-hidden group rounded-lg h-80"
+          >
+            <img
+              src="Abstract-Painting-modern-art-4.jpg"
+              alt="Wall Art & Decor"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="category-overlay absolute inset-0 bg-gradient-to-t from-chocolate/80 to-transparent flex items-end opacity-0 transition-opacity duration-300"
+            >
+              <div class="p-6">
+                <h3 class="text-cream-tan text-xl font-semibold playfair mb-2">
+                  Modern
+                </h3>
+                <p class="text-sirocco text-sm mb-4"></p>
+                <a
+                  href="#"
+                  class="inline-block text-cream-tan border-b border-cream-tan hover:text-safari transition-colors"
+                  >Explore Collection</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div
+            class="category-card relative overflow-hidden group rounded-lg h-80"
+          >
+            <img
+              src="Landscape-Painting-Contemporary-art-4.jpg"
+              alt="Display Pieces"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="category-overlay absolute inset-0 bg-gradient-to-t from-chocolate/80 to-transparent flex items-end opacity-0 transition-opacity duration-300"
+            >
+              <div class="p-6">
+                <h3 class="text-cream-tan text-xl font-semibold playfair mb-2">
+                  Contemporary
+                </h3>
+                <p class="text-sirocco text-sm mb-4"></p>
+                <a
+                  href="#"
+                  class="inline-block text-cream-tan border-b border-cream-tan hover:text-safari transition-colors"
+                  >Explore Collection</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-chocolate text-cream-tan pt-12 pb-6">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Visit Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Visit Us</h3>
+            <div class="bg-baltic-amber rounded-lg h-36 mb-4">
+              <!-- Placeholder for map -->
+              <div
+                class="w-full h-full flex items-center justify-center text-sirocco"
+              >
+                <i class="fas fa-map-marked-alt text-4xl"></i>
+              </div>
+            </div>
+            <address class="not-italic text-sirocco leading-relaxed">
+              COLLECTICO Gallery<br />
+              456 Art District Avenue<br />
+              Bangkok, Thailand 10500<br />
+              <a href="tel:+12125551234" class="hover:text-cream-tan"
+                >(+66)91 666-9999</a
+              >
+            </address>
+          </div>
+
+          <!-- About Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <p class="text-sirocco mb-4">
+              COLLECTICO is a premier destination for discerning collectors and
+              art enthusiasts. Our carefully curated collection features
+              exceptional pieces from world-renowned artists and emerging
+              talents.
+            </p>
+          </div>
+
+          <!-- Support -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Support</h3>
+            <ul class="space-y-2 text-sirocco">
+              <li><a href="#" class="hover:text-cream-tan">FAQs</a></li>
+              <li>
+                <a href="#" class="hover:text-cream-tan">Shipping & Delivery</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-cream-tan">Order Tracking</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-cream-tan">Contact Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4 mb-6">
+              <a
+                href="#"
+                class="bg-baltic-amber hover:bg-mocha-mousse h-10 w-10 rounded-full flex items-center justify-center transition"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-baltic-amber hover:bg-mocha-mousse h-10 w-10 rounded-full flex items-center justify-center transition"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-baltic-amber hover:bg-mocha-mousse h-10 w-10 rounded-full flex items-center justify-center transition"
+              >
+                <i class="fab fa-pinterest"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-baltic-amber hover:bg-mocha-mousse h-10 w-10 rounded-full flex items-center justify-center transition"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <h4 class="font-medium mb-2">Payment Methods</h4>
+            <div class="flex space-x-3">
+              <i class="fab fa-cc-visa text-2xl text-mocha-mousse"></i>
+              <i class="fab fa-cc-mastercard text-2xl text-mocha-mousse"></i>
+              <i class="fab fa-cc-amex text-2xl text-mocha-mousse"></i>
+              <i class="fab fa-cc-paypal text-2xl text-mocha-mousse"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-baltic-amber mt-10 pt-6">
+          <div class="md:flex-row justify-between text-center">
+            <p class="text-sirocco text-sm mb-4 md:mb-0">
+              &copy; 2025 COLLECTICO. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
