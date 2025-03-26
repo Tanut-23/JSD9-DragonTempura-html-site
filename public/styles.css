@@ -1,4 +1,8 @@
+@import "tailwindcss";
+@import url('https://fonts.cdnfonts.com/css/helvetica-now-mt-micro');
+
 :root {
+  font-family: Arial, Helvetica, sans-serif;
   --primary-color-1: #F2EEE7;
   --primary-color-2: #F0E0D0;
   --primary-color-3: #E9E2D6;
