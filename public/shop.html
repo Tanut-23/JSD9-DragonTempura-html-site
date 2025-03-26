@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Collectico shop</title>
     <link rel="stylesheet" href="styles.css"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="font-mono">
+<body class="font-sans">
     <nav class="bg-[#62483A] text-stone-200">
       <!-- nav-mobile -->
       <div class="flex flex-col items-center justify-center w-full p-4 md:hidden">
@@ -37,7 +37,7 @@
                 </svg>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden flex-col items-center justify-between mt-4 space-x-6 ">
+        <div id="mobile-menu" class="hidden flex-col items-center justify-between mt-4 space-x-3 ">
             <a href="#">Home</a>
             <a href="#">Shop</a>
             <a href="#">Auction</a>
@@ -86,7 +86,7 @@
         </div>
       </div>
       </nav>
-    <main>
+           <main>
             <div class="flex flex-col items-center justify-center bg-[#f2eee7]">
                 <div class="w-11/12">
                     <h1 class="text-4xl font-bold text-red-950 pt-10">The Collection</h1>
@@ -99,8 +99,8 @@
                         reference materials, and other resources.
                     </p>
                     <div class="my-6 flex flex-col md:flex-row items-center">
-                        <div class=" md:w-full">
-                            <div class="flex bg-white">
+                        <div class="md:w-full">
+                            <div class="flex">
                                 <input
                                     type="text"
                                     placeholder="Search by keyword, artist, or reference"
@@ -111,12 +111,13 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                     </svg>
                                 </button>
-                                <div class="">
+                                <!-- pc -->
+                                <div class="hidden md:block">
                                     <div class="flex justify-center items-center border-2 border-red-950 border-l-0 border-r-0">
                                         <span class="text-gray-600 px-8 bg-[#f2eee7] w-32 h-10 pt-2">Sort By</span>
                                     </div>
                                 </div>
-                                <select class="py-1 px-2 bg-[#f2eee7] border-2 border-red-950 border-l-0 font-extrabold">
+                                <select class="hidden md:block py-1 px-2 bg-[#f2eee7] border-2 border-red-950 border-l-0 font-semibold">
                                     <option selected>Relevance</option>
                                     <option>Price: Low to High</option>
                                     <option>Price: High to Low</option>
@@ -125,83 +126,112 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex justify-end bg-[#f2eee7] text-sm text-gray-600 pb-4 pr-20">
-              Showing 9 Products
+                 <!-- mobile -->
+                 <div class="md:hidden">
+                  <div class="flex justify-center items-center">
+                      <span class="text-gray-600 px-8 bg-[#f2eee7] w-32 h-10 ">Sort By</span>
+                  </div>
+              </div>
+              <select class="md:hidden py-1 px-2 mb-8 bg-[#f2eee7] border-2 border-red-950 font-semibold">
+                  <option selected>Relevance</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+              </select>
             </div>
             <section class="bg-[#e4dcd2] py-16 md:pl-16">
-            <div class="grid grid-cols-1  md:grid-cols-3 gap-x-0 gap-y-14  ml-10">
+              <div class="flex justify-end text-sm text-gray-600 pb-8 pr-20">
+                Showing 9 Products
+              </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-0 gap-y-14  ml-10">
                 <div>
+                  <a href="product.html">
                     <img src="productPicture/Abstract-Painting-Classic-Art-1.jpg" alt="" class="size-80 object-fill shadow-md shadow-gray-700"/>
                     <div class="pl-4">
                       <h3 class="font-bold text-sm uppercase pt-6">TEST</h3>
                       <p class="text-sm text-gray-600">By Sophia Laurent</p>
                       <p class="mt-2 font-medium">$2,450.00</p>
                     </div>
+                  </a>
                 </div>
                 <div>
+                  <a href="product.html">
                     <img src="productPicture/Genre-Painting-Modern-Art-5.jpg" alt="" class="size-80 object-fill shadow-md shadow-gray-700"/>
                     <div class="pl-4">
                       <h3 class="font-bold text-sm uppercase pt-6">TEST</h3>
                       <p class="text-sm text-gray-600">By Sophia Laurent</p>
                       <p class="mt-2 font-medium">$2,450.00</p>
                     </div>
+                  </a>
                 </div>
                 <div>
+                  <a href="product.html">
                     <img src="productPicture/Genre-Painting-Classic-Art-5.jpg" alt="" class="size-80 object-fill shadow-md shadow-gray-700"/>
                     <div class="pl-4">
                       <h3 class="font-bold text-sm uppercase pt-6">TEST</h3>
                       <p class="text-sm text-gray-600">By Sophia Laurent</p>
                       <p class="mt-2 font-medium">$2,450.00</p>
                     </div>
+                  </a>
                 </div>
                 <div>
+                  <a href="product.html">
                     <img src="productPicture/Abstract-Painting-Classic-Art-4.jpg" alt="" class="size-80 object-fill shadow-md shadow-gray-700"/>
                     <div class="pl-4">
                       <h3 class="font-bold text-sm uppercase pt-6">TEST</h3>
                       <p class="text-sm text-gray-600">By Sophia Laurent</p>
                       <p class="mt-2 font-medium">$2,450.00</p>
                     </div>
+                  </a>
                 </div>
                 <div>
+                  <a href="product.html">
                     <img src="productPicture/Abstract-Painting-Classic-Art-5.jpg" alt="" class="size-80 object-fill shadow-md shadow-gray-700"/>
                     <div class="pl-4">
                       <h3 class="font-bold text-sm uppercase pt-6">TEST</h3>
                       <p class="text-sm text-gray-600">By Sophia Laurent</p>
                       <p class="mt-2 font-medium">$2,450.00</p>
                     </div>
+                  </a>
                 </div>
                 <div>
+                  <a href="product.html">
                     <img src="productPicture/Abstract-Painting-Contemporary-Art-1.jpg" alt="" class="size-80 object-fill shadow-md shadow-gray-700"/>
                     <div class="pl-4">
                       <h3 class="font-bold text-sm uppercase pt-6">TEST</h3>
                       <p class="text-sm text-gray-600">By Sophia Laurent</p>
                       <p class="mt-2 font-medium">$2,450.00</p>
                     </div>
+                  </a>
                 </div>
                 <div>
+                  <a href="product.html">
                     <img src="productPicture/Abstract-Painting-Contemporary-Art-2.jpg" alt="" class="size-80 object-fill shadow-md shadow-gray-700"/>
                     <div class="pl-4">
                       <h3 class="font-bold text-sm uppercase pt-6">TEST</h3>
                       <p class="text-sm text-gray-600">By Sophia Laurent</p>
                       <p class="mt-2 font-medium">$2,450.00</p>
                     </div>
+                  </a>
                 </div>
                 <div>
+                  <a href="product.html">
                     <img src="productPicture/Abstract-Painting-Contemporary-Art-5.jpg" alt="" class="size-80 object-fill shadow-md shadow-gray-700"/>
                     <div class="pl-4">
                       <h3 class="font-bold text-sm uppercase pt-6">TEST</h3>
                       <p class="text-sm text-gray-600">By Sophia Laurent</p>
                       <p class="mt-2 font-medium">$2,450.00</p>
                     </div>
+                  </a>
                 </div>
                 <div>
+                  <a href="product.html">
                     <img src="productPicture/Abstract-Painting-Contemporary-Art-4.jpg" alt="" class="size-80 object-fill shadow-md shadow-gray-700"/>
                     <div class="pl-4">
                       <h3 class="font-bold text-sm uppercase pt-6">TEST</h3>
                       <p class="text-sm text-gray-600">By Sophia Laurent</p>
                       <p class="mt-2 font-medium">$2,450.00</p>
                     </div>
+                  </a>
                 </div>
             </div>
             </section>
@@ -331,6 +361,6 @@
         <p>&copy; 2025 Collectico. All rights reserved.</p>
       </div>
     </div>
-      </footer>
+           </footer>
 </body>
 </html>
