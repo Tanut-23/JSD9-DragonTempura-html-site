@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <body class="text-[var(--primary-color-4)] font-sans min-w-[1024px] w-full">
+  <body class="text-[var(--primary-color-4)] font-sans min-w-[550px] w-full">
     <!-------------------- NAV ------------------------------------->
     <nav class="bg-[#62483A] text-stone-200">
       <!-- nav-mobile -->
@@ -100,15 +100,20 @@
         </div>
       </div>
     </nav>
+    <!-- -----------------------HERO----------------------------------------->
+    <figure class="md:hidden relative bg-primary2 flex justify-end w-full h-80 bg-opacity-80">
+      <img src="/logo/logo.png" alt="logo" class="absolute left-6 top-6 w-[14%] contrast-125 drop-shadow-md hover:rotate-45 transition-transform duration-700">  
+      <img src="/productPicture/hero-picture.png" alt="hero-mobile" class="h-80 object-right opacity-80">
+    </figure>
 
     <!----------------------- HOME SECTION-------------------------------------------->
     <header class="relative w-full">
       <section
         id="home"
-        class="min-w-[1024px] w-full h-[450px] bg-primary1 pl-[36px] flex items-center gap-10"
+        class="w-full h-[500px] md:h-[450px] bg-primary1 px-[36px] flex items-center md:gap-10 md:pr-0"
       >
         <article
-          class="min-w-[433px] w-[50%] flex flex-col gap-[15px] my-[52px]"
+          class="min-w-[433px] md:w-[50%] flex flex-col gap-[15px] my-[52px]"
         >
           <p class="font-bold">Luxury Collection</p>
           <h1 class="text-[2.5rem] font-bold">
@@ -127,18 +132,18 @@
           </p>
           <div class="button flex gap-[15px] h-full mt-3">
             <button
-              class="h-[39px] bg-[var(--primary-color-4)] text-[var(--primary-color-3)] border rounded-sm hover:bg-[var(--primary-color-1)] hover:text-[var(--primary-color-4)] hover:border-[var(--primary-color-4)] px-[30px] transition duration-300"
+              class="h-[39px] px-8 bg-[var(--chocolate-color)] border-1 rounded-md text-[0.875rem] tracking-wide hover:cursor-pointer hover:bg-[var(--hoverBgButton-color)] hover:border hover:border-[var(--chocolate-color)] hover:text-[var(--hoverTextButton-color)] transition duration-300  text-[var(--mainSectionRegister-color)]"
             >
               Explore Collection
             </button>
             <button
-              class="h-[39px] bg-[var(--primary-color-4)] text-[var(--primary-color-3)] border rounded-sm hover:bg-[var(--primary-color-1)] hover:text-[var(--primary-color-4)] hover:border-[var(--primary-color-4)] px-[30px] transition duration-300"
+            class="h-[39px] px-8 bg-[var(--chocolate-color)] border-1 rounded-md text-[0.875rem] tracking-wide hover:cursor-pointer hover:bg-[var(--hoverBgButton-color)] hover:border hover:border-[var(--chocolate-color)] hover:text-[var(--hoverTextButton-color)] transition duration-300  text-[var(--mainSectionRegister-color)]"
             >
               Limited Editions
             </button>
           </div>
         </article>
-        <figure class="w-[50%] h-full">
+        <figure class="w-[50%] h-full hidden md:block">
           <img
             src="./productPicture/hero-picture.png"
             alt="hero"
@@ -152,11 +157,11 @@
       <!---------------- SHOP SECTION -------------------------------------------------------->
       <section
         id="shop"
-        class="relative min-w-[1024px] w-full h-[555px] bg-primary2 flex flex-col pt-[33px] px-[28px]"
+        class="relative w-full h-[650px] md:h-[555px] bg-primary2 flex flex-col pt-[33px] px-[28px] pb-[30px] md:pb-0"
       >
-        <article class="title flex flex-col gap-[16px] items-center">
+        <article class="title flex flex-col gap-[16px] items-center mb-4 md:mb-0">
           <h2 class="text-[1.5rem] font-bold">Our Collections</h2>
-          <p>
+          <p class="w-[80%]">
             Explore our carefully curated categories featuring the finest
             limited edition pieces from around the world.
           </p>
@@ -165,7 +170,7 @@
         <!-- Left-Right Arrow Button -->
         <div
           id="arrow-container"
-          class="flex gap-2 absolute top-[75px] right-[20px]"
+          class="hidden md:flex gap-2 absolute top-[85px] right-[20px]"
         >
           <div
             id="arrow-left"
@@ -213,64 +218,70 @@
         >
           <!-- Figure 1 -->
           <figure
-            class="w-1/4 min-w-[300px] relative overflow-hidden shadow-md shadow-gray-500 rounded-md"
+            class="w-1/4 min-w-[300px] relative mb-2 overflow-hidden shadow-md shadow-gray-500 rounded-md"
           >
-          <a href="./product.html">
-            <img
-              src="./productPicture/Portrait-Painting-Classic-Art-1.jpg"
-              alt=""
-              class="bg-secondary2 h-full w-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gray-900 rounded-md opacity-0 hover:opacity-50 hover:cursor-pointer transition duration-300"
-            ></div>
-          </a>
+            <a href="./product.html">
+              <img
+                src="./productPicture/Portrait-Painting-Classic-Art-1.jpg"
+                alt=""
+                class="bg-secondary2 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 rounded-md opacity-0 hover:opacity-50 hover:cursor-pointer transition duration-300"
+              ></div>
+            </a>
           </figure>
           <!-- Figure 2 -->
           <figure
-            class="w-1/4 min-w-[300px] relative overflow-hidden shadow-md shadow-gray-500 rounded-md"
+            class="w-1/4 min-w-[300px] relative mb-2 overflow-hidden shadow-md shadow-gray-500 rounded-md"
           >
-            <img
-              src="./productPicture/Abstract-Painting-Contemporary-Art-4.jpg"
-              alt=""
-              class="bg-secondary2 h-full w-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gray-900 rounded-md opacity-0 hover:opacity-50 hover:cursor-pointer transition duration-300"
-            ></div>
+            <a href="./product.html">
+              <img
+                src="./productPicture/Abstract-Painting-Contemporary-Art-4.jpg"
+                alt=""
+                class="bg-secondary2 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 rounded-md opacity-0 hover:opacity-50 hover:cursor-pointer transition duration-300"
+              ></div>
+            </a>
           </figure>
           <!-- Figure 3 -->
           <figure
-            class="w-1/4 min-w-[300px] relative overflow-hidden shadow-md shadow-gray-500 rounded-md"
+            class="w-1/4 min-w-[300px] relative mb-2 overflow-hidden shadow-md shadow-gray-500 rounded-md"
           >
-            <img
-              src="./productPicture/Abstract-Painting-Contemporary-Art-3.jpg"
-              alt=""
-              class="bg-secondary2 h-full w-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gray-900 rounded-md opacity-0 hover:opacity-50 hover:cursor-pointer transition duration-300"
-            ></div>
+            <a href="./product.html">
+              <img
+                src="./productPicture/Abstract-Painting-Contemporary-Art-3.jpg"
+                alt=""
+                class="bg-secondary2 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 rounded-md opacity-0 hover:opacity-50 hover:cursor-pointer transition duration-300"
+              ></div>
+            </a>
           </figure>
           <!-- Figure 4 -->
           <figure
-            class="w-1/4 min-w-[300px] relative overflow-hidden shadow-md shadow-gray-500 rounded-md"
+            class="w-1/4 min-w-[300px] relative mb-2 overflow-hidden shadow-md shadow-gray-500 rounded-md"
           >
-            <img
-              src="./productPicture/Landscape-Painting-Classic-Art-5.jpg"
-              alt=""
-              class="bg-secondary2 h-full w-full object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-gray-900 rounded-md opacity-0 hover:opacity-50 hover:cursor-pointer transition duration-300"
-            ></div>
+            <a href="./product.html">
+              <img
+                src="./productPicture/Landscape-Painting-Classic-Art-5.jpg"
+                alt=""
+                class="bg-secondary2 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 rounded-md opacity-0 hover:opacity-50 hover:cursor-pointer transition duration-300"
+              ></div>
+            </a>
           </figure>
         </div>
         <!-- Shop Button -->
-        <div class="button self-center">
+        <div class="button self-center py-4">
           <a href="./shoptib.html">
             <button
-              class="h-[39px] bg-secondary2 px-[30px] mt-3 bg-[var(--primary-color-1)] text-[var(--primary-color-4)] rounded-sm border border-[var(--primary-color-4)] hover:bg-[var(--primary-color-4)] hover:text-[var(--primary-color-3)] transition duration-300"
+              class="h-[39px] px-8 bg-[var(--chocolate-color)] border-1 rounded-md text-[0.875rem] tracking-wide hover:cursor-pointer hover:bg-[var(--hoverBgButton-color)] hover:border hover:border-[var(--chocolate-color)] hover:text-[var(--hoverTextButton-color)] transition duration-300  text-[var(--mainSectionRegister-color)]"
             >
               Explore Our Shop
             </button>
@@ -281,11 +292,11 @@
       <!---------------- AUCTION SECTION -------------------------------------------------------->
       <section
         id="auction"
-        class="relative min-w-[1024px] w-full h-[802px] bg-primary1 flex flex-col py-[33px] px-[28px]"
+        class="relative w-full h-[900px] md:h-[802px] bg-primary1 flex flex-col py-[33px] px-[28px]"
       >
         <div id="auction-title" class="flex flex-col gap-[20px] items-start">
           <h2 class="text-[1.5rem] font-bold">Exclusive Auction Pieces</h2>
-          <p class="w-[70%]">
+          <p class="w-[90%]">
             Discover our exclusive collection of rare, highly sought-after
             pieces, each selected for its exceptional craftsmanship and unique
             artistic vision.
@@ -295,7 +306,7 @@
         <!-- Left-Right Arrow Button -->
         <div
           id="arrow-container"
-          class="flex gap-2 absolute top-[80px] right-[20px]"
+          class="hidden md:flex gap-2 absolute top-[80px] right-[20px]"
         >
           <div
             id="arrow-left"
@@ -340,12 +351,12 @@
         <!-- Aution-Card-Container -->
         <div
           id="card-container"
-          class="my-[24px] flex gap-[24px] min-h-[75%] overflow-auto"
+          class="my-[24px] flex gap-[24px] md:min-h-[75%] min-h-[60%] overflow-auto"
         >
           <!-- card1 -->
           <article
             id="item-card"
-            class="relative bg-secondary1 w-1/4 min-w-[300px] flex flex-col justify-between rounded-md overflow-hidden shadow-xl"
+            class="relative bg-secondary1 w-1/4 min-w-[300px] flex flex-col justify-between mb-8 rounded-md overflow-hidden shadow-xl"
           >
             <div
               id="gray-screen"
@@ -416,7 +427,7 @@
           <!-- card 2 -->
           <article
             id="item-card"
-            class="relative bg-secondary1 w-1/4 min-w-[300px] flex flex-col justify-between rounded-md overflow-hidden shadow-xl"
+            class="relative bg-secondary1 w-1/4 min-w-[300px] flex flex-col justify-between mb-8 rounded-md overflow-hidden shadow-xl"
           >
             <div
               id="gray-screen"
@@ -487,7 +498,7 @@
           <!-- card 3 -->
           <article
             id="item-card"
-            class="relative bg-secondary1 w-1/4 min-w-[300px] flex flex-col justify-between rounded-md overflow-hidden shadow-xl"
+            class="relative bg-secondary1 w-1/4 min-w-[300px] flex flex-col justify-between mb-8 rounded-md overflow-hidden shadow-xl"
           >
             <div
               id="gray-screen"
@@ -556,7 +567,7 @@
           <!-- card 4 -->
           <article
             id="item-card"
-            class="relative bg-secondary1 w-1/4 min-w-[300px] flex flex-col justify-between rounded-md overflow-hidden shadow-xl"
+            class="relative bg-secondary1 w-1/4 min-w-[300px] flex flex-col justify-between mb-8 rounded-md overflow-hidden shadow-xl"
           >
             <div
               id="gray-screen"
@@ -624,7 +635,7 @@
         </div>
         <div class="button self-center">
           <button
-            class="h-[39px] bg-secondary2 px-[30px] bg-[var(--primary-color-1)] text-[var(--primary-color-4)] rounded-sm border border-[var(--primary-color-4)] hover:bg-[var(--primary-color-4)] hover:text-[var(--primary-color-3)] transition duration-300"
+            class="h-[39px] px-12 bg-[var(--chocolate-color)] border-1 rounded-md text-[0.875rem] tracking-wide hover:cursor-pointer hover:bg-[var(--hoverBgButton-color)] hover:border hover:border-[var(--chocolate-color)] hover:text-[var(--hoverTextButton-color)] transition duration-300  text-[var(--mainSectionRegister-color)]"
           >
             Go Auction
           </button>
@@ -634,11 +645,11 @@
       <!------------------------ REVIEW SECTION ------------------------------------->
       <section
         id="review"
-        class="relative flex flex-col min-w-[1024px] w-full h-[480px] py-[33px] bg-primary3"
+        class="relative flex flex-col w-full h-[480px] py-[33px] bg-primary3"
       >
-        <article class="flex flex-col h-[20%] gap-[20px] items-center">
+        <article class="flex flex-col h-[20%] gap-[20px] items-center mb-4">
           <h2 class="text-[1.5rem] font-bold">Collector Testimonials</h2>
-          <p>
+          <p class="w-[80%] text-center">
             Hear from our distinguished collectors about their experiences with
             our limited edition pieces
           </p>
@@ -647,7 +658,7 @@
         <!-- Left-Right Arrow Button -->
         <div
           id="arrow-container"
-          class="absolute top-[80px] right-[20px] flex gap-2"
+          class="absolute top-[85px] right-[18px] hidden md:flex gap-2"
         >
           <div
             id="arrow-left"
@@ -697,7 +708,7 @@
           <!-- Review-card-1 -->
           <article
             id="review-card"
-            class="flex flex-col min-w-[400px] w-2/6 gap-2 px-4 py-6 bg-secondary1 rounded-lg text-[var(--secondary-color-3)]"
+            class="flex flex-col min-w-[400px] w-2/6 gap-2 p-4 py-6 mb-5 bg-secondary1 rounded-lg text-[var(--secondary-color-3)]"
           >
             <!-- Star-container -->
             <div id="star-container" class="flex w-full h-[20%]">
@@ -787,7 +798,7 @@
           <!-- Review-card-2 -->
           <article
             id="review-card"
-            class="flex flex-col min-w-[400px] w-2/6 gap-2 px-4 py-6 bg-secondary1 rounded-lg text-[var(--secondary-color-3)]"
+            class="flex flex-col min-w-[400px] w-2/6 gap-2 px-4 py-6 mb-5 bg-secondary1 rounded-lg text-[var(--secondary-color-3)]"
           >
             <!-- Star-container -->
             <div id="star-container" class="flex w-full h-[20%]">
@@ -878,7 +889,7 @@
           <!-- <article id="review-card" class="w-2/6 bg-secondary2"></article> -->
           <article
             id="review-card"
-            class="flex flex-col min-w-[400px] w-2/6 gap-2 px-4 py-6 bg-secondary1 rounded-lg text-[var(--secondary-color-3)]"
+            class="flex flex-col min-w-[400px] w-2/6 gap-2 px-4 py-6 mb-5 bg-secondary1 rounded-lg text-[var(--secondary-color-3)]"
           >
             <!-- Star-container -->
             <div id="star-container" class="flex w-full h-[20%]">
@@ -969,7 +980,7 @@
           <!-- <article id="review-card" class="w-1/6 bg-secondary2"></article> -->
           <article
             id="review-card"
-            class="flex flex-col min-w-[400px] w-2/6 gap-2 px-4 py-6 bg-secondary1 rounded-lg text-[var(--secondary-color-3)]"
+            class="flex flex-col min-w-[400px] w-2/6 gap-2 px-4 py-6 mb-5 bg-secondary1 rounded-lg text-[var(--secondary-color-3)]"
           >
             <!-- Star-container -->
             <div id="star-container" class="flex w-full h-[20%]">
@@ -1062,7 +1073,7 @@
       <!------------------------ ABOUT SECTION ------------------------------------->
       <section
         id="about"
-        class="min-w-[1024px] w-full h-[1029px] bg-secondary1 flex flex-row gap-20 py-[50px] px-[54.5px] items-center"
+        class="w-full h-[1029px] bg-secondary1 flex flex-row md:gap-20 gap-10 py-[50px] md:px-[54.5px] px-10 items-center"
       >
         <article class="flex flex-col gap-4 w-[50%]">
           <h2 class="text-[1.5rem] font-bold">About Our Passion</h2>
@@ -1090,7 +1101,7 @@
             timeless symbols of resilience and hope.
           </p>
           <button
-            class="h-[39px] w-fit px-[30px] mt-2 bg-[var(--primary-color-4)] text-[var(--primary-color-1)] rounded-sm border border-[var(--primary-color-4)] hover:bg-[var(--primary-color-1)] hover:text-[var(--primary-color-4)] transition duration-300"
+            class="h-[39px] w-fit px-12 bg-[var(--chocolate-color)] border-1 rounded-md text-[0.875rem] tracking-wide hover:cursor-pointer hover:bg-[var(--hoverBgButton-color)] hover:border hover:border-[var(--chocolate-color)] hover:text-[var(--hoverTextButton-color)] transition duration-300  text-[var(--mainSectionRegister-color)]"
           >
             Our Story
           </button>
@@ -1099,9 +1110,10 @@
           <img
             src="./productPicture/Genre-Painting-Classic-Art-4.jpg"
             alt=""
-            class="bg-secondary2 w-[50%] h-full object-cover overflow-hidden brightness-110"
+            class="bg-secondary2 md:w-[50%] h-full object-cover overflow-hidden brightness-110"
           />
-          <div class="w-[50%] h-full flex flex-col gap-[12px]">
+          <!-- the two right pictures -->
+          <div class="w-[50%] h-full hidden md:visible md:flex md:flex-col md:gap-[12px]">
             <img
               src="./productPicture/Historical-Painting-Contemporary-Art-1.jpg"
               alt=""
@@ -1124,7 +1136,7 @@
 
     <footer
       id="contact"
-      class="w-full min-w-[1024px] bg-[#584640] text-white text-[10px]"
+      class="w-full bg-[#584640] text-white text-[10px]"
     >
       <div class="grid grid-cols-2 grid-rows-2 md:hidden">
         <div
