@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@heroicons/react@1.0.0/dist/heroicons-react.umd.js"></script>
+    <link rel="stylesheet" href="./styles.css"/>
     <title>Checkout</title>
 </head>
 <body class="min-w-[550px]">
@@ -45,11 +46,11 @@
               </div>
           </div>
           <div id="mobile-menu" class="hidden flex-col items-center justify-between mt-4 space-x-3 ">
-              <a href="#">Home</a>
-              <a href="#">Shop</a>
-              <a href="#">Auction</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
+              <a href="./index.html">Home</a>
+              <a href="./shoptib.html">Shop</a>
+              <a href="./index.html#auction">Auction</a>
+              <a href="./index.html#about">About</a>
+              <a href="./index.html#contact">Contact</a>
           </div>
       </div>
       <script>
@@ -70,11 +71,11 @@
                 <h2 class=" text-2xl font-bold ml-2">COLLECTICO</h2>
               </div>
               <div class="hidden md:flex space-x-10">
-                  <a href="#" class="hover:text-white">Home</a>
-                  <a href="#" class="hover:text-white">Shop</a>
-                  <a href="#" class="hover:text-white">Auction</a>
-                  <a href="#" class="hover:text-white">About</a>
-                  <a href="#" class="hover:text-white">Contact</a>
+                  <a href="./index.html" class="hover:text-white">Home</a>
+                  <a href="./shoptib.html" class="hover:text-white">Shop</a>
+                  <a href="./index.html#auction" class="hover:text-white">Auction</a>
+                  <a href="./index.html#about" class="hover:text-white">About</a>
+                  <a href="./index.html#contact" class="hover:text-white">Contact</a>
               </div>
               <div class="flex items-center space-x-4 pr-6">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -137,41 +138,47 @@
         <section id="context" class="font-sans mx-auto">
             <div class="flex max-md:flex-col-reverse">
                 <div class="flex md:flex-col  bg-[#E9E2D6] max-md:bg-[#F2EEE7] md:w-[30%] max-md:w-full min-h-[360px] p-[24px] items-center gap-[32px] max-h-[1800px] md:overflow-y-auto max-md:overflow-x-auto">
-                    <div class="flex flex-col min-w-[200px] rounded-t-[16px] shadow-lg duration-300 hover:scale-105">
-                        <img src="./productPicture/Genre-Painting-Classic-Art-3.jpg" class="w-[250px] h-[200px] border border-white rounded-t-[16px]">
-                        <p class="bg-white pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
-                        <p class="bg-white pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
-                        <p class="bg-white py-[16px] pl-[16px] text-[1rem] text-[#62483A]">$1,500.00</p>
+                    <div class="flex flex-col max-md:min-w-[240px] min-w-[200px] max-w-[360px] w-[100%] rounded-[8px] shadow-lg duration-300 hover:scale-105 border border-[#F3F0F0]">
+                      <img src="./productPicture/Genre-Painting-Classic-Art-3.jpg" class="  max-md:h-[200px] border-b border-[#F3F0F0] rounded-t-[8px]">
+                      <p class="bg-[#F3F0F0] pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
+                      <p class="bg-[#F3F0F0] pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
+                      <p class="bg-[#F3F0F0] py-[16px] pl-[16px] text-[1rem] text-[#62483A] rounded-b-[8px]">$1,500.00</p>
                     </div>
-                    <div class="flex flex-col min-w-[200px] rounded-t-[16px] shadow-lg duration-300 hover:scale-105">
-                        <img src="./productPicture/Historical-Painting-Classic-Art-5.jpg" class="w-[250px] h-[200px] border border-white rounded-t-[16px]">
-                        <p class="bg-white pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
-                        <p class="bg-white pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
-                        <p class="bg-white py-[16px] pl-[16px] text-[1rem] text-[#62483A]">$1,500.00</p>
+                    <div class="flex flex-col max-md:min-w-[240px] min-w-[200px] max-w-[360px] w-[100%] rounded-[8px] shadow-lg duration-300 hover:scale-105 border border-[#F3F0F0]">
+                      <img src="./productPicture/Historical-Painting-Classic-Art-5.jpg" class="  max-md:h-[200px] border-b border-[#F3F0F0] rounded-t-[8px]">
+                      <p class="bg-[#F3F0F0] pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
+                      <p class="bg-[#F3F0F0] pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
+                      <p class="bg-[#F3F0F0] py-[16px] pl-[16px] text-[1rem] text-[#62483A] rounded-b-[8px]">$1,500.00</p>
                     </div>
-                    <div class="flex flex-col min-w-[200px] rounded-t-[16px] shadow-lg duration-300 hover:scale-105">
-                        <img src="./productPicture/Landscape-Painting-Modern-Art-4.jpg" class="w-[250px] h-[200px] border border-white rounded-t-[16px]">
-                        <p class="bg-white pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
-                        <p class="bg-white pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
-                        <p class="bg-white py-[16px] pl-[16px] text-[1rem] text-[#62483A]">$1,500.00</p>
+                    <div class="flex flex-col max-md:min-w-[240px] min-w-[200px] max-w-[360px] w-[100%] rounded-[8px] shadow-lg duration-300 hover:scale-105 border border-[#F3F0F0]">
+                      <img src="./productPicture/Landscape-Painting-Modern-Art-4.jpg" class=" max-md:h-[200px] border-b border-[#F3F0F0] rounded-t-[8px]">
+                      <p class="bg-[#F3F0F0] pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
+                      <p class="bg-[#F3F0F0] pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
+                      <p class="bg-[#F3F0F0] py-[16px] pl-[16px] text-[1rem] text-[#62483A] rounded-b-[8px]">$1,500.00</p>
                     </div>
-                    <div class="flex flex-col min-w-[200px] rounded-t-[16px] shadow-lg duration-300 hover:scale-105">
-                        <img src="./productPicture/Landscape-Painting-Modern-Art-5.jpg" class="w-[250px] h-[200px] border border-white rounded-t-[16px]">
-                        <p class="bg-white pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
-                        <p class="bg-white pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
-                        <p class="bg-white py-[16px] pl-[16px] text-[1rem] text-[#62483A]">$1,500.00</p>
+                    <div class="flex flex-col max-md:min-w-[240px] min-w-[200px] max-w-[360px] w-[100%] rounded-[8px] shadow-lg duration-300 hover:scale-105 border border-[#F3F0F0]">
+                      <img src="./productPicture/Landscape-Painting-Modern-Art-5.jpg" class="  max-md:h-[200px] border-b border-[#F3F0F0] rounded-t-[8px]">
+                      <p class="bg-[#F3F0F0] pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
+                      <p class="bg-[#F3F0F0] pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
+                      <p class="bg-[#F3F0F0] py-[16px] pl-[16px] text-[1rem] text-[#62483A] rounded-b-[8px]">$1,500.00</p>
                     </div>
-                    <div class="flex flex-col min-w-[200px] rounded-t-[16px] shadow-lg duration-300 hover:scale-105">
-                        <img src="./productPicture/Genre-Painting-Contemporary-Art-5.jpg" class="w-[250px] h-[200px] border border-white rounded-t-[16px]">
-                        <p class="bg-white pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
-                        <p class="bg-white pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
-                        <p class="bg-white py-[16px] pl-[16px] text-[1rem] text-[#62483A]">$1,500.00</p>
+                    <div class="flex flex-col max-md:min-w-[240px] min-w-[200px] max-w-[360px] w-[100%] rounded-[8px] shadow-lg duration-300 hover:scale-105 border border-[#F3F0F0]">
+                      <img src="./productPicture/Genre-Painting-Contemporary-Art-5.jpg" class="  max-md:h-[200px] border-b border-[#F3F0F0] rounded-t-[8px]">
+                      <p class="bg-[#F3F0F0] pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
+                      <p class="bg-[#F3F0F0] pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
+                      <p class="bg-[#F3F0F0] py-[16px] pl-[16px] text-[1rem] text-[#62483A] rounded-b-[8px]">$1,500.00</p>
                     </div>
-                    <div class="flex flex-col min-w-[200px] rounded-t-[16px] shadow-lg duration-300 hover:scale-105">
-                        <img src="./productPicture/Portrait-Painting-Modern-Art-5.jpg" class="w-[250px] h-[200px] border border-white rounded-t-[16px]">
-                        <p class="bg-white pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
-                        <p class="bg-white pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
-                        <p class="bg-white py-[16px] pl-[16px] text-[1rem] text-[#62483A]">$1,500.00</p>
+                    <div class="flex flex-col max-md:min-w-[240px] min-w-[200px] max-w-[360px] w-[100%] rounded-[8px] shadow-lg duration-300 hover:scale-105 border border-[#F3F0F0]">
+                      <img src="./productPicture/Portrait-Painting-Modern-Art-5.jpg" class="  max-md:h-[200px] border-b border-[#F3F0F0] rounded-t-[8px]">
+                      <p class="bg-[#F3F0F0] pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
+                      <p class="bg-[#F3F0F0] pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
+                      <p class="bg-[#F3F0F0] py-[16px] pl-[16px] text-[1rem] text-[#62483A] rounded-b-[8px]">$1,500.00</p>
+                    </div>
+                    <div class="flex flex-col max-md:min-w-[240px] min-w-[200px] max-w-[360px] w-[100%] rounded-[8px] shadow-lg duration-300 hover:scale-105 border border-[#F3F0F0]">
+                      <img src="./productPicture/Genre-Painting-Classic-Art-4.jpg" class="  max-md:h-[200px] border-b border-[#F3F0F0] rounded-t-[8px]">
+                      <p class="bg-[#F3F0F0] pt-[16px] pl-[16px] text-[1rem] font-bold text-[#62483A]">Road of Question</p>
+                      <p class="bg-[#F3F0F0] pl-[16px] font-thin text-[0.75rem] text-[#62483A]">By Austis Dragon</p>
+                      <p class="bg-[#F3F0F0] py-[16px] pl-[16px] text-[1rem] text-[#62483A] rounded-b-[8px]">$1,500.00</p>
                     </div>
                 </div>
                 <div class="flex flex-col bg-[#E9E2D6] md:w-[70%] max-md:w-full min-h-[360px] p-[32px] gap-[32px]">
@@ -309,7 +316,7 @@
                             <p class="mt-[10px] text-[0.75rem] font-thin text-[#62483A] ">Your payment information is encrypted and securet</p>
                       </div>
                     </div>
-                    <a href="./checkout.html" class="mx-auto"><button class="border-[#62483A] border-2 rounded-[8px] px-[48px] py-[16px] text-[1.25rem]  tracking-wide bg-[#62483A] text-[#E9E2D6] hover:text-[#62483A] hover:bg-[#F2EEE7]">Purchase</button></a>
+                    <a href="./checkout.html" class="mx-auto"><button class="w-[326px] h-[34px] bg-[var(--chocolate-color)] border-1 rounded-md text-[0.875rem] tracking-wide hover:cursor-pointer hover:bg-[var(--hoverBgButton-color)] hover:border hover:border-[var(--chocolate-color)] hover:text-[var(--hoverTextButton-color)] transition duration-300  text-[var(--mainSectionRegister-color)]">Purchase</button></a>
                 </div>
             </div>
         </section>
