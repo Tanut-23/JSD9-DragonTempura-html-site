@@ -7,31 +7,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./styles.css" rel="stylesheet" />
   </head>
-  <body class="font">
-    <header id="nav_header" class="text-[var(--chocolate-color)] bg-[var(--headerRegister-color)] h-[350px] px-[56px] py-[32px]">
-        <div id="top_header" class="flex justify-between">
-          <p class="">HOME > CREATE ACCOUNT</p>
-          <p class="text-right">&lt;&lt; RETURN TO HOME PAGE</p>
-        </div>
-        <div id="mid_header"  class="flex justify-center items-center flex-col h-full gap-[24px]">
-          <h1 class="text-[1.875rem] py-[16px] font-semibold border-b border-t border-[var(--chocolate-color)]">CREATE ACCOUNT</h1>
-          <p class="">Welcome to be our member.</p>
-        </div>
-    </header>
+  <body class="bg-black">
     <section
       id="register_form"
-      class="flex flex-col justify-center items-center h-[765px] bg-[var(--mainSectionRegister-color)]"
+      class="flex justify-center items-center h-[765px]"
     >
-    <div
-      id="register_header"
-      class="flex justify-center items-center h-[170px] bg-[var(--mainSectionRegister-color)] text-[var(--chocolate-color)]"
-    >
-      <p>REGISTER USER</p>
-    </div>
       <div
         id="main_box"
-        class="flex flex-col justify-center items-center w-[815px] h-[480px] bg-[var(--formRegister-color)] rounded-2xl"
+        class="popup flex flex-col justify-center items-center w-[815px] h-[680px] bg-[var(--mainSectionRegister-color)] rounded-2xl gap-[12px] border-8 border-white"
       >
+      <div class="flex flex-col justify-center items-center gap-[8px] pb-[36px]">
+        <img src="logo/logo.png" class="w-[60px]"/>
+        <h1 class="text-[1.25rem] font-bold text-[var(--chocolate-color)]">Join the Creative Community</h1>
+        <p class="text-[0.75rem] text-[var(--fontGray-color)]">Sign up to explore, buy, and sell unique artworks from talented creators around the world.</p>
+      </div> 
         <div id="form_box" class="flex gap-24 ">
           <div id="left_section">
             <form class="flex flex-col justify-center items-center space-y-4 text-[var(--chocolate-color)]">
@@ -107,7 +96,7 @@
                 />
               </svg>
             </div>
-            <button class="hover:cursor-pointer hover:bg-[var(--mainSectionRegister-color)] hover:text-[var(--chocolate-color)] transition duration-300  text-white bg-[var(--buttonUpImage-color)] w-[106px] py-2 px-2 border-1 rounded-xl text-[0.875rem]">Upload Image</button>
+            <button class="hover:cursor-pointer hover:bg-[var(--hoverButtonUpImage-color)] hover:border hover:border-[var(--chocolate-color)] hover:text-gray-800 transition duration-300  text-white bg-[var(--buttonUpImage-color)] w-[106px] py-2 px-2 border-1 rounded-xl text-[0.875rem]">Upload Image</button>
           </div>
         </div>
         <div id="bottom_form" class="mt-8 flex items-center gap-[60px]">
